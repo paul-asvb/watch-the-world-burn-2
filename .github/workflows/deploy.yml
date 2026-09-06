@@ -44,6 +44,7 @@ jobs:
 
       - name: Add coi-serviceworker for SharedArrayBuffer
         run: |
+          apt-get update && apt-get install -y curl
           curl -fsSL https://github.com/gzuidhof/coi-serviceworker/raw/master/coi-serviceworker.js > build/web/coi-serviceworker.js
           sed -i '0,/<head>/s/<head>/<head>\n    <script src="coi-serviceworker.js"><\/script>/' build/web/index.html
 
