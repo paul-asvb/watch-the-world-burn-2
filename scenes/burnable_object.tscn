@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://burnable_obj_001"]
+
+[ext_resource type="Script" path="res://scripts/burnable_object.gd" id="1"]
+
+[sub_resource type="CircleShape2D" id="1"]
+radius = 20.0
+
+[node name="BurnableObject" type="StaticBody2D"]
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("1")
+
+[node name="Sprite2D" type="ColorRect" parent="."]
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+color = Color(0.2, 0.8, 0.2, 1)
