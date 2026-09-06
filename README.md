@@ -6,7 +6,7 @@ A cozy roguelike game where you play as a mischievous living flame exploring a s
 
 ## Play Online
 
-The game is deployed at: [GitHub Pages URL will be available after first deployment]
+Play the game here: **https://paul-asvb.github.io/watch-the-world-burn-2/**
 
 ## Game Concept
 

@@ -72,7 +72,7 @@ func spawn_object(type: String):
 	obj.position = pos
 	add_child(obj)
 
-func create_object_by_type(type: String) -> BurnableObject:
+func create_object_by_type(type: String):
 	var obj = preload("res://scenes/burnable_object.tscn").instantiate()
 	
 	match type:
